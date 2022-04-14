@@ -116,6 +116,12 @@ namespace Task3
 
 		public static void CheckArgs(string[] args)
         {
+            if (args.Length == 0)
+            {
+				Console.WriteLine("Ypu need to enter an arguments");
+				Environment.Exit(0);
+			}
+
 			if (args.Length < 3)
 			{
 				Console.WriteLine("Need a number greater than 3");

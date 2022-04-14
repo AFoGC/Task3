@@ -20,7 +20,7 @@ namespace Task3
 
         public void NextMove()
         {
-            int computerMove = RandomNumberGenerator.GetInt32(args.Length - 1);
+            int computerMove = RandomNumberGenerator.GetInt32(args.Length);
             byte[] key = new byte[32];
             RandomNumberGenerator.Fill(key);
             ComputerMove = args[computerMove];
